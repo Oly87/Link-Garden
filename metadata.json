@@ -1,0 +1,6 @@
+{
+  "name": "Link Garden",
+  "description": "An AI-powered personal knowledge garden to save, organize, and chat with links, articles, and notes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

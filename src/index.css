@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-sage-50: #f4f6f4;
+  --color-sage-100: #e8ede9;
+  --color-sage-200: #d1ddd3;
+  --color-sage-300: #abbfb0;
+  --color-sage-400: #7f9c87;
+  --color-sage-500: #5c7b64;
+  --color-sage-600: #46604e;
+  --color-sage-700: #3a4e40;
+  --color-sage-800: #304035;
+  --color-sage-900: #29352d;
+  
+  --color-garden-cream: #FBFBF9;
+  --color-garden-slate: #1F2421;
+}
+
+/* Custom Scrollbars to keep it minimalist and organic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage-200);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-400);
+}
+
+/* Custom animation for gentle flower-growth pulse */
+@keyframes bloomPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+.animate-bloom {
+  animation: bloomPulse 3s ease-in-out infinite;
+}
